@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jana nayagan movie</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+    <style>
+        body{
+            background-color:  rgba(205, 204, 204, 0.749);
+             width: 100%;
+        }
+        *{
+            overflow-x: hidden;
+            box-sizing: border-box;
+            transition: all 0.2s linear;
+        }
+        .container{
+            background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.4)),url(./bigpic/bigpic4.png);
+          background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            opacity: 1;
+            box-shadow:  1px 2px 3px black inset;
+           height: 490px;
+          
+        
+        }
+
+        .box{
+            display: flex;
+            margin-left: 10px;
+            margin-top: 5px;
+
+        }
+
+        .image img{
+            border-radius: 20px;
+            height: 310px;
+            padding: 10px 20px;
+        }
+
+        .item{
+            text-align: start;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            text-shadow: 0px 1px 0px #ccc,
+                         0px 2px 0px #ccc,
+                         0px 3px 0px #ccc,
+                         0px 4px 0px #ccc,
+                         0px 5px 0px #ccc,
+                         0px 6px 0px #ccc,
+                         0px 7px 0px #ccc,;
+        }
+
+        .item h2{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .item p,pre{
+            font-size: 17px;
+        }
+
+        .item p button{
+            background-color: rgba(186, 188, 188, 0.468);
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bolder;
+             cursor: pointer;
+        }
+
+        button{
+            background-color: rgb(248, 248, 248);
+            color: rgb(31, 31, 31);
+            padding: 13px; 
+            border: none;
+            border-radius: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .cast{
+            display: flex;
+            text-align: center;
+        }
+
+        span{
+            display: block;
+               overflow: hidden;
+               position: relative;
+               top: 6px;
+        }
+
+        .item#span{
+             margin-top: 5px;
+        }
+
+        @media screen and (max-width:712px) {
+            .cast{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 10px;
+            }
+        }
+
+        .cast img{
+            height: 150px;
+            margin-left: 10px;
+            width: 100px;
+            border-radius: 10px;
+        }
+       h5{
+        margin-bottom: -30px;
+       }
+
+       h3{
+        text-transform: uppercase;
+        text-decoration:underline;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image"> <img src="./movie list/vj69.png" alt=""></div>
+            <div class="item"> 
+                <h2>jana nayagan (2025 )</h2>
+                <p><span class="material-symbols-outlined" id="span">star</span> 8.0/10 (4k+ Votes)  >   <button onclick="rate()">Rate now</button></p>
+                <pre>Upcoming Action/Drama</pre>
+                <p> <button>2D</button> <button>Tamil</button></p>
+
+                <button onclick="next()">Book tickets</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>About the movie :</h3>
+        <p>Jana Nayagan (The People's Leader) is a highly anticipated Tamil action-drama film starring Vishal and directed by H. Vinoth, a remake/adaptation of the Telugu hit Bhagavanth Kesari, centering on a powerful, righteous leader fighting for the common man against corrupt forces, blending mass entertainment with a family entertainer feel, set for release in 2025.  </p>
+    </div>
+       
+
+    <!---------------------------------------------------------------cost ----------------------------------->
+    <h3>Cast :</h3>
+    <div class="cast">
+        
+            <div>
+                <img src="./jana nayagan/vijay.png" alt="">
+                <span>Vijay</span>
+            </div>
+
+             <div>
+                <img src="./jana nayagan/pooja.png" alt="">
+                <span>Pooja</span>
+            </div>
+
+             <div>
+                <img src="./jana nayagan/Mamitha Baiju.png" alt="">
+               <span>Mamitha</span>
+            </div>
+
+             <div>
+                <img src="./jana nayagan/Prakash Raj.png" alt="">
+                <span>Prakash Raj</span>
+            </div>
+
+             <div>
+                <img src="./jana nayagan/Priyamani.png" alt="">
+                <span>Priyamani</span>
+            </div>
+             <div>
+                <img src="./jana nayagan/Gautham Vasudev Menon.png" alt="">
+                <span>GVM</span>
+            </div>
+
+
+    </div>
+
+
+    <script>
+        function next(){
+            window.location.href="bookform.html"
+        }
+
+         function rate(){
+            window.location.href="review.html"
+        }
+    </script>
+</body>
+</html>

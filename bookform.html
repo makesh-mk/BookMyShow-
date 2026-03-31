@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Bookmyshow</title>
+     <link rel="icon" href="myshow-icon.png">
+    <style>
+        body{
+            background-image: url(./cinematic-film-location-decor.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            opacity: -40px;
+        }
+        .main{
+            text-align: center;
+        }
+        
+        .head1{
+            margin-bottom: 20px;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 2px 3px rgb(197, 197, 197);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        label{
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 0 2px 3px black;
+            letter-spacing: 1px;
+        }
+
+        label .list{
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .seat{
+            height: 35px;
+            width: 40px;
+            background-color: rgb(146, 146, 146);
+            box-shadow: 1px 1px 2px black,
+                        inset -1px -2px white;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 10px;
+            transition: all 0.1s linear;
+        }
+
+        .seat:hover{
+            transform: scaleY(1.1);
+        }
+
+        .seat.selected{
+            background-color: aqua;
+        }
+
+
+        label,.list{
+            display: none;
+        }
+        #seated{
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 1px;
+            margin-left: 20%;
+        }
+
+        .box{
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+           text-shadow: 1px 2px 3px black;
+        }
+
+        .button{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 3px 2px black;
+            transition: all 0.2s linear;
+            color: rgb(255, 255, 255);
+            background-color: rgba(177, 0, 0, 0.864);
+            border: 1px solid white;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .button:hover{
+             background-color: rgb(77, 255, 0);
+             color: black;
+             font-weight: bold;
+             transform: scale(1.1,1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2 class="head1">MOVIE TICKET</h2>
+        <label>Ticket available below :</label>
+        <select name="" id="movielist" class="list"> 
+            <option value="300">LEO</option>
+            <option value="250">GOAT</option>
+            <option value="400">Kaththi</option>
+            <option value="300">Trla</option>
+            <option value="500">Jana Nayagan</option>
+            <option value="300">Attagasam</option>
+        </select>
+          
+        <br>
+
+        <div id="seated">  </div>
+            
+        <div class="box">
+            <p>selected seat: <span id="count">0</span></p>
+            <p>Total price: <span id="total">0</span></p>
+        </div>
+
+        <button id="btn" class="button">Book now</button>
+
+    </div>
+
+    <script src="bookmovie.js"></script>
+</body>
+</html>

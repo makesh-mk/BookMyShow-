@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAT</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+    <style>
+        body{
+            background-color: rgba(205, 204, 204, 0.749);
+             width: 100%;
+        }
+        *{
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        .container{
+            background:url(./goat.backimage.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            opacity: 1;
+            box-shadow:  1px 2px 3px black inset;
+           max-height: 340px;
+          
+        
+        }
+
+        /* 
+        media quary mullama try pannanum bg-image ah  --task
+        */
+
+        .box{
+            display: flex;
+            margin-left: 10px;
+            margin-top: 5px;
+
+        }
+
+        .image img{
+            border-radius: 10px;
+            height: 310px;
+            padding: 10px 20px;
+        }
+
+        .item{
+            text-align: start;
+            text-shadow: 1px 2px 3px white;
+        }
+
+        .item h2{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .item p{
+            font-size: 18px;
+        }
+
+        .item p button{
+            background-color: skyblue;
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bolder;
+             cursor: pointer;
+        }
+
+        button{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+        .cast{
+            display: flex;
+            text-align: center;
+        }
+
+        span{
+               display: block;
+        }
+
+        @media screen and (max-width:712px) {
+            .cast{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 10px;
+            }
+        }
+
+        .cast img{
+            height: 150px;
+            margin-left: 10px;
+            width: 100px;
+            border-radius: 10px;
+        }
+       h5{
+        margin-bottom: -30px;
+       }
+
+       h3{
+        text-transform: uppercase;
+       }
+
+       #up{
+        overflow: hidden;
+        position: relative;
+        top: 6px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image"> <img src="./movie list/goat.png" alt=""></div>
+            <div class="item"> 
+                <h2>GOAT (2024)</h2>
+                <p><span class="material-symbols-outlined" id="up">star</span> 8.0/10 (4k+ Votes) >   <button onclick="rate()">Rate now</button></p>
+                <p>3h 3m Action/Drama</p>
+                <p> <button>2D</button> <button>Tamil</button></p>
+
+                <button onclick="next()">Book tickets</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>About the movie :</h3>
+        <p>The Greatest of All Time (also marketed as GOAT) is a 2024 Indian Tamil-language action thriller film[10] directed by Venkat Prabhu and produced by AGS Entertainment. The film stars Vijay in dual roles, alongside Prashanth, Prabhu Deva, Mohan, Jayaram, Ajmal Ameer, Vaibhav, Yogi Babu, Premgi Amaren, Sneha, Laila, Meenakshi Chaudhary and Abyukta Manikandan. It is the twenty-fifth production of the studio and the penultimate film of Vijay before his political entry. The film follows Gandhi, the former leader of an anti-terrorism squad, who reunites with his squad members to address the problems that stemmed from their previous actions.</p>
+    </div>
+       
+
+    <!---------------------------------------------------------------cost ----------------------------------->
+    <h3>Cast :</h3>
+    <div class="cast">
+        
+            <div>
+                <img src="./goat/vijay.png" alt="">
+                <span>Vijay</span>
+            </div>
+
+             <div>
+                <img src="./goat/trisha.png" alt="">
+                <span>Trisha</span>
+            </div>
+
+             <div>
+                <img src="./goat/meenakshi.png" alt="">
+               <span>Meenakshi</span>
+            </div>
+
+             <div>
+                <img src="./goat/mohan.png" alt="">
+                <span>Mohan</span>
+            </div>
+
+             <div>
+                <img src="./goat/prabhu.png" alt="">
+                <span>Prabhu</span>
+            </div>
+             <div>
+                <img src="./goat/prasanth.png" alt="">
+                <span>Prashanth</span>
+            </div>
+
+              <div>
+                <img src="./goat/prem.png" alt="">
+                <span>Prem</span>
+            </div>
+
+              <div>
+                <img src="./goat/sneha.png" alt="">
+                <span>Sneha</span>
+            </div>
+    </div>
+
+
+    <script>
+        function next(){
+            window.location.href="bookform.html"
+        }
+
+         function rate(){
+            window.location.href="review.html"
+        }
+    </script>
+</body>
+</html>
